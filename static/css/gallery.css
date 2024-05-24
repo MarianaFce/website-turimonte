@@ -15,7 +15,8 @@
 
 
 .topheader {
-    background-color: transparent;
+    box-shadow: 0 2px 0 var(--bg-color);
+    background-color: var(--primary-color);
     position: fixed;
     top: 0;
     left: 0;
@@ -34,11 +35,10 @@
     background-color:transparent;
 }
 
-
 .logo {
     display: flex;
     align-items: center;
-    font-size: 1em;
+    font-size: 0.5em;
     font-weight: bold;
     color: white;
 }
@@ -48,11 +48,11 @@
     border: none;  
 }
 
-
 .logotype {
     display: flex;
     justify-content: center;
     color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.863);
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
@@ -80,19 +80,19 @@ a {
     cursor: pointer;  
 }
 
+body {
+    background-color: var(--third-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+}
 
 h2 {
     letter-spacing: 1.5px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 0.85em;  
+    font-size: 0.85em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.863);
     color:white;
     text-align: center;
-}
-
-body {
-    background-color: var(--third-color);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-font-size: 3em;
 }
 
 .grid-item{

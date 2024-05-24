@@ -14,7 +14,6 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-
 body{
     background-image: url('../imgs/playa.jpg');
     background-size: cover;
@@ -36,7 +35,6 @@ body::before {
     background-size: cover;
 }
 
-
 .topheader {
     background-color: transparent;
     position: fixed;
@@ -45,7 +43,6 @@ body::before {
     width: 100%;
     z-index: 100;
 }
-
 
 .topnav {
     display: flex;
@@ -58,16 +55,13 @@ body::before {
     background-color:transparent;
 }
 
-
-
-
-.logo {
+/* .logo {
     display: flex;
     align-items: center;
     font-size: 2.5em;
     font-weight: bold;
     color: var(--bg-color);
-}
+} */
 
 a {
     background-color: none;
@@ -85,23 +79,21 @@ a:hover{
     border: 2px solid var(--bg-color);  
 }
 
+    /* .logo:hover{
+        color: none;
+        border: none;  
+    }
 
-.logo:hover{
-    color: none;
-    border: none;  
-}
+    .logotype {
+        display: flex;
+        justify-content: center;
+        color: var(--bg-color);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
 
-
-.logotype {
-    display: flex;
-    justify-content: center;
-    color: var(--bg-color);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.logotype:hover {
-    animation: tilt-n-move-shaking 0.5s infinite;
-}
+    .logotype:hover {
+        animation: tilt-n-move-shaking 0.5s infinite;
+    } */
 
 @keyframes tilt-n-move-shaking{
     0% { transform: translate(0,0) rotate(0deg);}
@@ -110,7 +102,6 @@ a:hover{
     75% { transform: translate(-5px,5px) rotate(-5deg);}
     100% { transform: translate(0,0) rotate(0deg);}
 }
-
 
 .form-wrapper {
     position: absolute;
@@ -251,11 +242,6 @@ form button:hover{
 .form-control input.error, .form-select.error{
     border: 2px solid red; 
 }
-
-
-
-
-
 
 @media (max-width: 740px) {
     body::before {
