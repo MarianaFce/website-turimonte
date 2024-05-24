@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TURIMONTE</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./static/imgs/favicon-16x16.png">
+    <link rel="stylesheet" href="./static/css/contact.css">
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="topheader">
+        <nav class="topnav"> 
+            <a href="./index.html" class="logo"> 
+                <div class="logotype">TURIMONTE <br> </div>
+            </a>  
+        </nav>
+    </header>
+    <br>
+    <br>
+    <main>
+        <section  class="form-wrapper">
+            <h2>Contacto</h2>
+            <form action="https://formsubmit.co/alvarezmarianafce@gmail.com"  id="formContact" method="POST" >
+                <div class="form-control">
+                    <label>Nombre</label>
+                    <input type="text" required name="firstname" id="firstname" >
+                </div>
+                <div class="error" id="error-fistnamet"></div>
+                <div class="form-control">
+                    <label>Apellido</label>
+                    <input type="text" required name="lastname" id="lastname">
+                </div>
+                <div class="error" id="error-lastname"></div>
+                <div class="form-control">
+                    <label>Email</label>
+                    <input type="email" required name="email" id="email">
+                </div>
+                <div class="error" id="error-email"></div>
+                <div class="form-control">
+                    <label id="label-reason">Motivo de Consulta</label>
+                    <input type="text" required name="reason" id="reason">
+                </div>
+                <div class="form-control">
+                    <select name="country" id="country" class="form-select">
+                        <option value="">País</option>
+                        <option value="AR">Argentina</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BR">Brasil</option> 
+                        <option value="CH">Chile</option>
+                        <option value="CO">Colombia</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Perú</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="VE">Venezuela</option>
+                    </select>
+                </div>
+                <button type="submit" id="btn-send"> Enviar</button>
+            </form>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../static/js/validation-register.js"></script> 
+</body>
+</html>
